@@ -7,10 +7,6 @@ html {
         margin: 0;
     }
     /*Все ссылки будут такого цвета*/
-    a {
-        color:#018ad2 ;
-        text-decoration: none; /*Убирает подчеркивание ссылки*/
-    }
     
     /*При наведении курсора ссылка меняет цвет*/
     a:hover {
@@ -70,6 +66,7 @@ html {
         line-height: 28px;
         color: #000000;
         text-decoration: none; /*убирает подчеркивание ссылки*/
+        
     }
     .header__btn{
         margin-left: 32px; /*левый отступ*/
@@ -148,13 +145,13 @@ html {
         padding: 95px 110px 54px; /*Внутренние отступы всего селекта от элементов*/
     }
     
-    .item { /*Класс для блока, отвечающий за расположение*/
+.advantage { /*Класс для блока, отвечающий за расположение*/
         display: flex;
         flex-direction: column;/*ставим колонкой*/
         align-items: center; /*центрирует элементы по вспомогательной оси*/
         padding: 30px 66px;
     }
-.color-header { /*   Стиль заголовка*/
+.advantage__color-header { /*   Стиль заголовка*/
     font-style: normal;
     font-weight: 700; /*Жирность шрифта*/
     font-size: 18px; /*Размер Шрифта*/
@@ -163,17 +160,18 @@ html {
     color: black;
 }
 
-.green{
+.advantage__color-header_green{
     color: #24BA96;
 
 }
-.yellow{
+.advantage__color-header_yellow{
     color: #F0A900;
 }
-.red{
+.advantage__color-header_red{
     color: #FF6577;
 }
-    .second-section .item p { /*Дизайн p Во втоором блоке*/
+
+.advantage__text { /*Дизайн p Во втоором блоке*/
         font-style: italic;
         font-weight: 400;
         font-size: 16px;
@@ -185,11 +183,6 @@ html {
         
     }
     
-    .item img {
-        width: 173px;
-        height: 165px;
-    }
-
  
   /* {/*НОВОЕ*/
        /* margin: 0;/*Все отступы по умолчанию убраны

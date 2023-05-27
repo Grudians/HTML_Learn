@@ -4,17 +4,33 @@
 
 <head>
     <meta charset="UTF-8"> <!--страница на русском-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Наша страна</title> <!-- Заголовок страницы, отображается
         во вкладке -->
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
     <header id="head"> <!--Ссылка на начало страницы блок footer-->
-        <span> <span style="color: red;">our</span><span style="color: deepskyblue;">country</span> </span>
-        <img src="./images/logo_main.png" alt="логотип">
-        <a href="tel:78007877725">+7-800-787-77-25</a>
-        <button>Забронировать</button>
+
+        <section class="cap-section">
+
+            <div class="cap-div">
+                <span> OurCountry <img src="./images/logo_main.png" alt="логотип"></span>
+            </div>
+
+            <div class="cap-div">
+                <a href="tel:78007877725">+7-800-787-77-25</a>
+            </div>
+
+            <div class="cap-div">
+                <button class="btn btn_small">Забронировать</button>
+            </div>
+            
+
+        </section>
     </header>
     <nav>
         <a href="/main">Главная</a>
@@ -24,63 +40,52 @@
 
 
     <main>
-        <section>
-            <h1>Актуальные события городов России</h1>
-            <h2></h2>
-            <p>Путеводитель по России: лучшие достопримечательности России, куда сходить самостоятельно, что посмотреть
+        <section class="first-section">
+            <h1 class="header">Актуальные события городов России</h1>
+            <p class="text">Путеводитель по России: лучшие достопримечательности России, куда сходить самостоятельно,
+                что посмотреть
                 /
                 Лучшие места России для туристов / ТОП 20 достопримечательностей России, которые непременно стоит
                 посетить
             </p>
+            <button class="btn btn_large">Забронировать</button>
+
         </section>
-        <section>
-            <ul> <!--Ненумерованный спиок-->
-                <li>
-                    <h4>Санкт-Петербург и ЛО</h4>
-                    <ol> <!--Нумерованный спиок-->
-                        <li>
-                            <h5>Кронштад</h5>
-                        </li>
-                        <li>
-                            <h5>Гатчина</h5>
-                        </li>
-                    </ol>
-                </li>
-                <li>
-                    <h4>Москва и МО</h4>
-                </li>
-                <li>
-                    <h4>Крым</h4>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <div style="display: flex;">
-                <div>
-                    <h2>Велотур в горы Крым</h2>
-                    <p>Совершите незабываемое путешествие на вершину горы с вашим двухколесным другом!</p>
-                </div>
-                <img src="./images/velotury-krym-3.jpg" alt="тут были горы" height="400px">
-            </div>
+        <!-- 
+            <h2>Велотур в горы Крым</h2>
             <p>Совершите незабываемое путешествие на вершину горы с вашим двухколесным другом!</p>
-            <button>Забронировать</button>
-            <h3>Безопасность</h3>
-            <p>В велопутешествии вас будет сопровождать профессиональный тренер- гид, который не позволит вам получить
-                травму</p>
-            <h3>Незабываемые эмоции</h3>
-            <p>Свежий горный воздух, голубое небо, солнце и двухколесный друг рядом. Что может быть лучше?</p>
-            <h3>Доступная цена</h3>
-            <p>Стоимость путешествия вас приятно удивит. Такую велопрогулку может позволить себе каждый</p>
+            <span><img id="krim" src="./images/velotury-krym-3.jpg" alt="тут были горы"> </span>
+            </div> -->
+        <section class="second-section">
+            <div class="item">
+                <img src="./images/second-selection/icon_1.png" alt="Картинка">
+                <h3 class="color-header green">Безопасность</h3>
+                <p>В велопутешествии вас будет сопровождать профессиональный тренер- гид, который не позволит вам
+                    получить
+                    травму</p>
+            </div>
+
+            <div class="item">
+                <img src="./images/second-selection/icon_2.png" alt="Картинка">
+                <h3 class="color-header yellow">Незабываемые эмоции</h3>
+                <p>Свежий горный воздух, голубое небо, солнце и двухколесный друг рядом. Что может быть лучше?</p>
+            </div>
+
+            <div class="item">
+                <img src="./images/second-selection/icon_3.png" alt="Картинка">
+                <h3 class="color-header red">Доступная цена</h3>
+                <p>Стоимость путешествия вас приятно удивит. Такую велопрогулку может позволить себе каждый</p>
+            </div>
         </section>
         <section>
             <h2>Отзывы наших клиентов</h2>
             <p>“Прекрасная велопрогулка по горной местности в чудесной компании! Привез с собой массу положительных
                 эмоций и
                 красивых фотографий!”</p>
-            <span> Завьялов Арсений <span><img src="./images/star.png" alt="звезда" height="20" width="20"><img
-                        src="./images/star.png" alt="звезда" height="20" width="20"><img src="./images/star.png"
-                        alt="звезда" height="20" width="20"><img src="./images/star.png" alt="звезда" height="20"
-                        width="20"><img src="./images/star.png" alt="звезда" height="20" width="20"></span> </span>
+            <span> Завьялов Арсений <span><img id="star" src="./images/star.png" alt="звезда"><img id="star"
+                        src="./images/star.png" alt="звезда"><img id="star" src="./images/star.png" alt="звезда"><img
+                        id="star" src="./images/star.png" alt="звезда"><img id="star" src="./images/star.png"
+                        alt="звезда"></span> </span>
         </section>
         <section>
             <h2>Особенности тура</h2>
@@ -94,15 +99,15 @@
                 <li>На протяжении всего маршрута вас будет сопровождать профессиональный тренер-гид.</li>
                 <li>Не упустите возможность покорить вершину горы и насладиться потрясающим видом!</li>
             </ul>
-            <img height="400px" src="./images/cyclist-resting-silhouette-sunset-active-outdoor-sport-concept 1.png"
+            <img id="krim" src="./images/cyclist-resting-silhouette-sunset-active-outdoor-sport-concept 1.png"
                 alt="велосипед">
         </section>
         <section> <!--БЛОК С РЕКЛАМОЙ-->
-            <iframe src="./ads.html" frameborder="0" height="400"></iframe>
-            <iframe src="./ads.html" frameborder="0" height="400"></iframe>
+            <iframe class="ad" src="./ads.html" frameborder="0"></iframe>
+            <iframe class="ad" src="./ads.html" frameborder="0"></iframe>
         </section>
         <section><!--БЛОК ТАБЛИЧКИ-->
-            <table border="1" wight="600"> 
+            <table class="TABLE" border="1">
                 <thead>
                     <tr>
                         <th align="center">Страна</th> <!--align="center" - выравнивание по центру-->
@@ -120,7 +125,8 @@
                     </tr>
                     <tr>
                         <td align="center">Россия</td>
-                        <td align="center">Велотур Солнечная-Царская тропа, Ласточкино гнездо<br> Алушта - Ласточкино гнездо</td>
+                        <td align="center">Велотур Солнечная-Царская тропа, Ласточкино гнездо<br> Алушта - Ласточкино
+                            гнездо</td>
                         <td align="center">6</td>
                         <td align="center">6600</td>
                     </tr>

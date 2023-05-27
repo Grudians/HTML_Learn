@@ -1,0 +1,20 @@
+/*Картинки*/
+#krim { 
+    height:400px;
+}
+
+#star {
+    height:20px;
+    width:20px;
+}
+
+/*Реклама ad-переводится как объявление*/
+.ad {
+ height:400px;
+}
+
+/*Таблица*/
+.TABLE {
+    width:600px;
+}
+

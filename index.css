@@ -1,0 +1,232 @@
+/*Тренировочка*/
+html {
+    font-family: 'Open Sans', sans-serif;
+    }
+    
+    body {/*чтоб не было белых полей слевой и правой стороны фона*/
+        margin: 0;
+    }
+    /*Все ссылки будут такого цвета*/
+    a {
+        color:#018ad2 ;
+        text-decoration: none; /*Убирает подчеркивание ссылки*/
+    }
+    
+    /*При наведении курсора ссылка меняет цвет*/
+    a:hover {
+        color: #c00;
+    }
+    
+    .btn {
+        background: #278EED; /*Фон кнопки*/
+        border: 1px solid #278EED;
+        border-radius: 20px; /*Закругление кнопки*/
+        padding: 20px; /* Размер кнопки*/
+        color: white; /*Цвет кнопки*/
+        cursor: pointer;
+       /* padding-top: 8px;  /*Внутренний отступ сверху*/
+       /* padding-bottom: 8px; /*Внутренний отступ снизу*/
+        /*padding-left: 12px; /*Внутренний отступ слева*/
+        /*padding-right: 12px; /*Внутренний отступ справа*/
+    }
+.btn_large{
+    font-size: 18px; /*Размер шрифта*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 115px;
+    padding-right: 115px;
+}
+.btn_small{
+    font-size: 14px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+    
+    iframe {
+        border: 1px solid #ccc;
+    }
+    
+    p {
+        font-size: 18px; /*размер основного текста*/
+        padding-top: 16px;
+        padding-bottom: 16px; 
+        padding-left: 16px; 
+        padding-right: 16px;
+       /* text-indent: 20px; /* Отступ первой строки в пикселах */
+    }
+    
+    ul {
+        padding-left: 0px;
+    }
+    
+    ol { 
+        padding-left: 0px;
+    }
+    
+    .cap-section {
+        display: flex;
+        /*gap: 32px; /*Пробел между элементами
+       /*  justify-content: center; /*Выравнивает по центру всей страницы*/ 
+        box-sizing: border-box;
+        background: #F3F4F6;
+       /* padding: 20px 0px 20px;*/
+    }
+
+.cap-div span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    width: 240px;
+    margin: 0;
+        
+
+}
+
+    .cap-div {
+        display: flex;
+       /* flex-direction: column;/*ставим колонкой*/
+        align-items: center; /*центрирует элементы по вспомогательной оси*/
+        padding: 20px 200px;
+    }
+
+.cap-div img {
+width: 59px;
+height: 31px
+}
+
+
+.cap-div a {
+    width: 240px;
+    margin: 0;
+        
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+text-align: center;
+color: #000000;
+
+    }
+  
+
+    /*Первая секция*/
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 133px;
+        height: 880px; /**/
+        box-sizing: border-box;
+        background-image: url(./images/fon.png);
+        background-size: cover; /* заполняет фон во всю ширину стр.*/
+        background-color: #278EED;
+    }
+
+    /*Вторая секция*/
+    .second-section {
+        display: flex;
+        gap: 32px; /*Пробел между элементами*/
+        justify-content: center; /*Выравнивает по центру всей страницы*/
+        background: #F3F4F6;
+        padding: 95px 110px 54px; /*Внутренние отступы всего селекта от элементов*/
+    }
+    
+    .item { /*Класс для блока, отвечающий за расположение*/
+        display: flex;
+        flex-direction: column;/*ставим колонкой*/
+        align-items: center; /*центрирует элементы по вспомогательной оси*/
+        padding: 30px 66px;
+    }
+.color-header { /*   Стиль заголовка*/
+    font-style: normal;
+    font-weight: 700; /*Жирность шрифта*/
+    font-size: 18px; /*Размер Шрифта*/
+    line-height: 30px /**/;
+    text-align: center; /*Выравнивание по центру*/
+    color: black;
+}
+
+.green{
+    color: #24BA96;
+
+}
+.yellow{
+    color: #F0A900;
+}
+.red{
+    color: #FF6577;
+}
+    .second-section .item p { /*Дизайн p Во втоором блоке*/
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #111827;
+        width: 240px;
+        margin: 0;
+        
+    }
+    
+    .item img {
+        width: 173px;
+        height: 165px;
+    }
+
+    .header {
+    
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 44px;
+    line-height: 58px;
+    text-align: center;
+    margin: 0;
+    }
+    
+    .text {/*Настройка текста для первого <p>*/
+        max-width: 572px; /*адаптируем текс под экран*/
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 16px;
+        margin-bottom: 52px;
+    }
+    
+    /* header { /*ХЗ устанавливаем размеры хедера*/
+/*   display: flex;
+    flex-direction: row;
+    justify-content: flex-start;} */
+    
+    /* .span-header{/*размещаем текст хедера*/
+    /* 
+    margin-left: 114px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+    margin-right: 1156px;
+    box-sizing: border-box;/*применяется для изменения алгоритма расчёта ширины и высоты элемента*/
+    /* 
+    }
+    
+    .img-header{
+    
+    left: 202px;
+    top: 18px;
+    bottom: 15px;
+    right: 1139x;
+    } */
+    
+    header a{ /*цвет текста хедера*/
+        color: black;
+    }
+
+    * {/*НОВОЕ*/
+        margin: 0;/*Все отступы по умолчанию убраны*/
+        padding: 0;
+            }

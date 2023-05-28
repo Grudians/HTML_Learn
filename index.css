@@ -9,6 +9,7 @@ html {
     /*Все ссылки будут такого цвета*/
     
     /*При наведении курсора ссылка меняет цвет*/
+    
     a:hover {
         color: #c00;
     }
@@ -17,6 +18,10 @@ html {
         border: 1px solid #ccc;
     }
     
+    .d-none.d-none { /*ВРЕМЕННОЕ СКРЫТИЕ ЭЕЛЕМЕНТОВ*/
+        display: none;
+    }
+
     p {
         font-size: 18px; /*размер основного текста*/
         padding-top: 16px;
@@ -40,11 +45,21 @@ html {
         top:0;
         height: 64px;
         background: #F3F4F6;
+        /* Центролизурем контент*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+
+    /*Адаптивный дизайн шапки*/
+
+    .header__inner{
         display: flex;
         align-items: center;
         padding: 0px 114px;
-
+        max-width: 1400px;
+        width: 100%;
     }
     /*Элементы блока*/
     .header__title{
@@ -66,12 +81,35 @@ html {
         line-height: 28px;
         color: #000000;
         text-decoration: none; /*убирает подчеркивание ссылки*/
+        min-width: 167px; /*ХЗ*/
         
     }
     .header__btn{
         margin-left: 32px; /*левый отступ*/
     }
 
+    @media screen and (max-width: 996px) { /*Адаптивный дизайн для заголовка*/
+        .header__inner {
+            padding: 64px;
+        }
+    }
+    @media screen and (max-width: 640px) {
+        .header{
+            height: 42px;
+        }
+        .header__inner {
+            padding: 12px;
+        }
+        .header__title {
+            display: none;
+        }
+        .header__tel {
+            display: none;
+        }
+        .header__btn {
+            margin-left: auto; /*Кнопка уходит по стандарту вправо*/
+        }
+    }
     .btn {
         background: #278EED; /*Фон кнопки*/
         border: 1px solid #278EED;
@@ -88,8 +126,7 @@ html {
     font-size: 18px; /*Размер шрифта*/
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 115px;
-    padding-right: 115px;
+    width: 100%;
 }
 .btn_small{
     font-size: 14px;
@@ -103,17 +140,23 @@ html {
 
 
     /*Первая секция*/ /*по технологии БЭМ*/
-    .first-section{
+    .first-section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 133px;
         height: 880px; /**/
         box-sizing: border-box;
         background-image: url(./images/fon.png);
         background-size: cover; /* заполняет фон во всю ширину стр.*/
         background-color: #278EED;
+        background-position-x: 50%; /*при уменьшении разрешения экрана фон централизируется по центру*/
+        height: calc(100vh - 64px);/*по высоте экрана*/
+        padding: 16px;
+        padding-top: 133px;
     }
+
+    
+
     .first-section__header { 
     
         font-style: normal;
@@ -122,9 +165,9 @@ html {
         line-height: 58px;
         text-align: center;
         margin: 0;
-     }
+    }
         
-     .first-section__text {/*Настройка текста для первого <p>*/
+    .first-section__text {/*Настройка текста для первого <p>*/
             max-width: 572px; /*адаптируем текс под экран*/
             font-style: normal;
             font-weight: 600;
@@ -135,21 +178,50 @@ html {
             margin-bottom: 52px;
         }
         
+    .first-section__btn-wrap { /*Позиционирование кнопки через адаптивный дизайн*/
+            width: 100%;
+            max-width: 372px;
+            box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 640px) {
+        .first-section {
+            height: calc(100vh - 42px);
+        }
+    }
+
+    @media screen and (max-width: 360px) { /*Для маленьких экранов*/
+        .first-section__header {
+            font-size: 26px;
+            line-height: 40px;
+        }
+        .first-section__text {
+            font-size: 20px;
+            line-height: 34px;
+        }
+    }
 
     /*Вторая секция*/
-    .second-section {
+
+.second-section {
         display: flex;
         gap: 32px; /*Пробел между элементами*/
         justify-content: center; /*Выравнивает по центру всей страницы*/
         background: #F3F4F6;
         padding: 95px 110px 54px; /*Внутренние отступы всего селекта от элементов*/
     }
+
+@media screen and (max-width: 996px) {
+    .second-section {
+        flex-direction: column; /*Похиционирование в колонку*/
+    }
+}
     
 .advantage { /*Класс для блока, отвечающий за расположение*/
         display: flex;
         flex-direction: column;/*ставим колонкой*/
         align-items: center; /*центрирует элементы по вспомогательной оси*/
-        padding: 30px 66px;
+        padding: 30px 5%;
     }
 .advantage__color-header { /*   Стиль заголовка*/
     font-style: normal;
@@ -178,11 +250,17 @@ html {
         line-height: 28px;
         text-align: center;
         color: #111827;
-        width: 240px;
+        max-width: 240px;
         margin: 0;
         
     }
-    
+
+.advantage__img {
+
+    max-width: 173px;
+    max-height: 165px;
+    width: 100%;
+}
  
   /* {/*НОВОЕ*/
        /* margin: 0;/*Все отступы по умолчанию убраны

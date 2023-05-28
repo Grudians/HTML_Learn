@@ -14,14 +14,15 @@
 
 <body>
     <header class="header" id="head"> <!--Ссылка на начало страницы блок footer-->
-                <span class="header__title"> OurCountry </span>
+      <div class="header__inner">         
+        <span class="header__title"> OurCountry </span>
                 <img class="header__logo" src="./images/logo_main.png" alt="логотип">
             
                 <a class="header__tel" href="tel:78007877725">+7-800-787-77-25</a>
                 <button class="header__btn btn btn_small">Забронировать</button>
-            
+            </div> 
     </header>
-    <nav>
+    <nav class="d-none">
         <a href="/main">Главная</a>
         <a href="/advantages">Преимущества</a>
         <a href="/reviews">Отзывы</a>
@@ -37,8 +38,9 @@
                 Лучшие места России для туристов / ТОП 20 достопримечательностей России, которые непременно стоит
                 посетить
             </p>
+            <div class="first-section__btn-wrap">
             <button class="btn btn_large">Забронировать</button>
-
+            </div>
         </section>
         <!-- 
             <h2>Велотур в горы Крым</h2>
@@ -48,7 +50,7 @@
 
         <section class="second-section">
             <div class="advantage">
-                <img src="./images/second-selection/icon_1.png" alt="Картинка">
+                <img class="advantage__img" src="./images/second-selection/icon_1.png" alt="Картинка">
                 <h3 class="advantage__color-header advantage__color-header_green">Безопасность</h3>
                 <p class="advantage__text">В велопутешествии вас будет сопровождать профессиональный тренер- гид, который не позволит вам
                     получить
@@ -56,18 +58,18 @@
             </div>
 
             <div class="advantage">
-                <img src="./images/second-selection/icon_2.png" alt="Картинка">
+                <img class="advantage__img"  src="./images/second-selection/icon_2.png" alt="Картинка">
                 <h3 class="advantage__color-header advantage__color-header_yellow">Незабываемые эмоции</h3>
                 <p class="advantage__text">Свежий горный воздух, голубое небо, солнце и двухколесный друг рядом. Что может быть лучше?</p>
             </div>
 
             <div class="advantage">
-                <img src="./images/second-selection/icon_3.png" alt="Картинка">
+                <img class="advantage__img"  src="./images/second-selection/icon_3.png" alt="Картинка">
                 <h3 class="advantage__color-header advantage__color-header_red">Доступная цена</h3>
                 <p class="advantage__text">Стоимость путешествия вас приятно удивит. Такую велопрогулку может позволить себе каждый</p>
             </div>
         </section>
-        <section>
+        <section class="d-none">
             <h2>Отзывы наших клиентов</h2>
             <p>“Прекрасная велопрогулка по горной местности в чудесной компании! Привез с собой массу положительных
                 эмоций и
@@ -77,7 +79,7 @@
                         id="star" src="./images/star.png" alt="звезда"><img id="star" src="./images/star.png"
                         alt="звезда"></span> </span>
         </section>
-        <section>
+        <section class="d-none">
             <h2>Особенности тура</h2>
             <ul>
                 <li>Велопрогулка совершается на вашем или арендованном у нас велосипеде.</li>
@@ -92,15 +94,15 @@
             <img id="krim" src="./images/cyclist-resting-silhouette-sunset-active-outdoor-sport-concept 1.png"
                 alt="велосипед">
         </section>
-        <section> <!--БЛОК С РЕКЛАМОЙ-->
+        <!--<section> <!--БЛОК С РЕКЛАМОЙ
             <iframe class="ad" src="./ads.html" frameborder="0"></iframe>
             <iframe class="ad" src="./ads.html" frameborder="0"></iframe>
-        </section>
-        <section><!--БЛОК ТАБЛИЧКИ-->
+        </section>-->
+       <!-- <section>  БЛОК ТАБЛИЧКИ ПОКА УБРАЛ
             <table class="TABLE" border="1">
                 <thead>
                     <tr>
-                        <th align="center">Страна</th> <!--align="center" - выравнивание по центру-->
+                        <th align="center">Страна</th> <!--align="center" - выравнивание по центру
                         <th align="center">Название</th>
                         <th align="center">Кол-во часов</th>
                         <th align="center">Цена с человека (рубли)</th>
@@ -122,7 +124,7 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </section> -->
     </main>
     <footer>
         <div>OOO "Наша Страна", 2023 г

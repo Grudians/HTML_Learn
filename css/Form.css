@@ -1,0 +1,16 @@
+.auth-form__header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 38px;
+    color: #161516;
+}
+
+.auth-form__check-info {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+/*# sourceMappingURL=Form.css.map */

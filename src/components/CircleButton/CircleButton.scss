@@ -1,0 +1,21 @@
+.CircleButton {
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    padding: 9px;
+
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    
+
+    &:hover {
+        background: #D58C51;
+        border: transparent 1px;
+    }
+}
+
+

@@ -1,0 +1,19 @@
+.button {
+    background: #D58C51;
+    padding: 12px 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #131313;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+
+    &_outline {
+        border: 1px solid #D58C51;
+        background: transparent;
+        color: #D58C51;
+    }
+}
+
